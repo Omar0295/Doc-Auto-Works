@@ -6,91 +6,171 @@
 <title>DOC Auto Works</title>
 
 <style>
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background: #111;
-  color: #fff;
-  padding: 40px 20px;
+body {
+  background: #f2f2f2;
+  color: #222;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1625047509168-a7026f36de04");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 40px 20px;
 }
 
-.logo {
-  max-width: 320px;
+.hero-content {
+  max-width: 500px;
   width: 100%;
-  height: auto;
+}
+
+.hero img {
+  width: 220px;
+  max-width: 90%;
   margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  background: #25D366;
+.hero h1 {
   color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
-section {
+.hero p {
+  color: #ddd;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin: 12px auto;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #e50914;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== SECTIONS ===== */
+.section {
   background: #fff;
   margin: 15px;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
 }
 
+.section h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.section p,
+.section li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  padding: 6px 0;
+}
+
+/* ===== FOOTER ===== */
 footer {
-  background: #222;
+  background: #111;
   color: #fff;
   text-align: center;
   padding: 15px;
+  font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <!-- LOGO FROM ROOT LEVEL -->
-  <img src="company-logo.jpg" alt="DOC Auto Works Logo" class="logo">
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <!-- LOGO FROM ROOT -->
+    <img src="company-logo.jpg" alt="DOC Auto Works Logo">
 
-  <p>General Mechanics • A/C • Suspension • Electrical Diagnostics</p>
+    <h1>Welcome to DOC Auto Works</h1>
+    <p>We’re Open for Business</p>
 
-  <a class="btn" href="https://wa.me/15052636186" target="_blank">
-    Book via WhatsApp
-  </a>
-</header>
+    <a href="https://wa.me/15052636186" class="btn btn-primary" target="_blank">
+      SCHEDULE APPOINTMENT
+    </a>
 
-<section>
-  <h2>About Us</h2>
+    <a href="tel:15052636186" class="btn btn-secondary">
+      CALL NOW
+    </a>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+  <h2>Customer Experience is Our #1 Priority</h2>
   <p>
-    DOC Auto Works provides professional and reliable automotive repair services.
-    Quality work, honest service, and customer satisfaction are our priority.
+    Honest service, quality repairs, and dependable results.
+    We treat every vehicle like our own.
   </p>
-</section>
+</div>
 
-<section>
-  <h2>Services</h2>
+<!-- SERVICES -->
+<div class="section">
+  <h2>Our Services</h2>
   <ul>
     <li>General Mechanical Repairs</li>
-    <li>A/C Service & Repair</li>
+    <li>A/C Service & Diagnostics</li>
     <li>Suspension & Steering</li>
     <li>Electrical Diagnostics</li>
+    <li>Programming</li>
   </ul>
-</section>
+</div>
 
-<section>
+<!-- CONTACT -->
+<div class="section">
   <h2>Contact</h2>
-  <p><strong>Phone:</strong> 505-263-6186</p>
   <p><strong>Owner:</strong> Omar Yanez</p>
-</section>
+  <p><strong>Phone:</strong> 505-263-6186</p>
+</div>
 
 <footer>
   © 2025 DOC Auto Works
