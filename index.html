@@ -19,23 +19,11 @@ body {
 }
 
 /* ===== HERO SECTION ===== */
-.hero {
-  position: relative;
-  min-height: 90vh;
-  background-color: #203a5f;
-
-  background-image: url("company-logo.jpg");
-  background-repeat: no-repeat;
-
-  /* 👇 THIS IS THE CROP CONTROL */
-  background-size: 900px auto;     /* controls logo width */
-  background-position: center 30px; /* moves logo up/down */
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 60px;
+﻿.hero {
+ background-image: url("company-logo.jpg");
+ background-size: contain;
+ background-position: center;
+ background-repeat: no-repeat;
 }
 
 .hero-content {
