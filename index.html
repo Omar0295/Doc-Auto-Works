@@ -22,13 +22,11 @@ body {
 .hero {
   position: relative;
   min-height: 90vh;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("https://images.unsplash.com/photo-1625047509168-a7026f36de04");
-  background-size: cover;
-  background-position: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("company-logo.jpg") no-repeat center center;
+  background-size: contain;
+  background-color: #111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,8 +126,6 @@ footer {
 <!-- HERO -->
 <div class="hero">
   <div class="hero-content">
-    <!-- LOGO FROM ROOT -->
-    <img src="company-logo.jpg" alt="DOC Auto Works Logo">
 
     <h1>Welcome to DOC Auto Works</h1>
     <p>We’re Open for Business</p>
